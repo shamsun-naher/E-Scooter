@@ -3,6 +3,7 @@ import pandas as pd
 import plotly.graph_objects as go
 import joblib
 
+def function_from_script1():
 # Load Data
 X_forecasting = pd.read_csv('data.csv')
 train_pred_df = pd.read_csv('train_pred_df.csv')
@@ -104,3 +105,4 @@ st.plotly_chart(plot_hourly_scenario_3hwindow())
 # Optional: Save as HTML (for embedding elsewhere)
 #st.download_button("Download Interactive Graph", data=open("panel_dashboard.html", "rb"), file_name="forecast_plot.html", mime="text/html")
 #import os
+  return "This is the result from Script 1"
